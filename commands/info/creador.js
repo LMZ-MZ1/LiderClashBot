@@ -1,0 +1,55 @@
+import PhoneNumber from 'awesome-phonenumber';
+
+export default {
+  command: ['creador'],
+  category: 'info',
+  info: {
+    desc: 'Información del creador del bot',
+    uso: ''
+  },
+  async run(client, m) {
+    try {
+
+      const number = '525655125175'
+      const jid = number + '@s.whatsapp.net'
+
+      const contact = {
+        number,
+        name: 'Barush | LMZ | MZ1',
+        org: dev,
+        email: 'ablchce@hotmail.com',
+        region: 'México',
+      }
+
+      const generateVCard = ({ number, name, org, email, region, website, note }) => {
+        const phone = PhoneNumber('+' + number)
+        const intl = phone.getNumber('international') || '+' + number
+        const clean = (text) => String(text).replace(/\n/g, '\\n').trim()
+
+        return `
+BEGIN:VCARD
+VERSION:3.0
+FN:${clean(name)}
+ORG:${clean(org)}
+TEL;type=CELL;waid=${number}:${intl}
+EMAIL:${clean(email)}
+ADR:;;${clean(region)};;;;
+URL:${clean(website)}
+NOTE:${clean(note)}
+END:VCARD`.trim()
+      }
+
+      const vcard = generateVCard(contact)
+
+      await client.sendMessage(m.chat, {
+        contacts: {
+          displayName: contact.name,
+          contacts: [{ vcard, displayName: contact.name }]
+        }
+      }, { quoted: m })
+
+    } catch (e) {
+      await client.reply(m.chat, msgglobal, m)
+    }
+  }
+};
