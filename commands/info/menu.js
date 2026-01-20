@@ -96,7 +96,7 @@ export default {
         const catName =
           category.charAt(0).toUpperCase() + category.slice(1)
 
-        menu += `\n .  . ︵ *${catName}*.  ◌Ⳋ𝅄\n`
+        menu += `\n Comandos de *${catName}*\n`
 
         categories[category].forEach(cmd => {
           menu += `• ${prefix}${cmd.name} ${cmd.uso ? `+ ${cmd.uso}` : ''}\n`
