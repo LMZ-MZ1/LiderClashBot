@@ -15,7 +15,7 @@ CR-Líder es un bot de WhatsApp para grupos de Clash Royale basado en `baileys`.
 si necesitas ayuda para integrarlo en tu whatsapp con tu propio clan, contáctame
 
 📧 **Correo:**  
-[✉️ lmz.help.ai@gmail.com](mailto:lmz.help.ai@gmail.com)
+[lmz.help.ai@gmail.com](mailto:lmz.help.ai@gmail.com)
 
 📱 **WhatsApp:**  
 <a href="https://wa.me/qr/WLDXPYETVK4TC1">
