@@ -12,6 +12,16 @@
 ## 🪾 Descripción 
 
 CR-Líder es un bot de WhatsApp para grupos de Clash Royale basado en `baileys`.
+si necesitas ayuda para integrarlo en tu whatsapp con tu propio clan, contáctame
+
+📧 **Correo:**  
+[✉️ lmz.help.ai@gmail.com](mailto:lmz.help.ai@gmail.com)
+
+📱 **WhatsApp:**  
+<a href="https://wa.me/qr/WLDXPYETVK4TC1">
+  <img src="https://img.shields.io/badge/WhatsApp-Chat-25D366?logo=whatsapp&logoColor=white" />
+</a>
+
 
 ---
 
@@ -22,7 +32,6 @@ CR-Líder es un bot de WhatsApp para grupos de Clash Royale basado en `baileys`.
 - Información en tiempo real de guerras de clanes
 - Integración con Royale API
 - Gestión de grupos
-- Juegos interactivos
 - Integración con APIs externas
 ---
 
@@ -53,19 +62,20 @@ Si editas el bot, debes mantener los créditos principales y no borrarlos bajo n
 
 En Caso de que quieras borrar el bot de cloud shell 
 ```bash
-rm -rf LiderBot
+rm -rf LiderClashBot
 ```
-o PowerShell
+o borrarlo de PowerShell
 ```bash
-Remove-Item -Recurse -Force LiderBot
+Remove-Item -Recurse -Force LiderClashBot
+```
+Para iniciar una instalación limpia
+
+```bash
+git clone https://github.com/LMZ-MZ1/LiderClashBot
 ```
 
 ```bash
-git clone https://github.com/LMZ-MZ1/LiderBot
-```
-
-```bash
-cd LiderBot
+cd LiderClashBot
 ```
 
 ```bash
@@ -97,11 +107,11 @@ apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
 ```bash
-git clone https://github.com/DevZyxlJs/AlyaBot-MD
+git clone https://github.com/LMZ-MZ1/LiderClashBot
 ```
 
 ```bash
-cd AlyaBot-MD
+cd LiderClashBot
 ```
 
 ```bash
@@ -123,7 +133,7 @@ npm start
 <details>
 <summary><strong>🦦 Comandos para tener mas tiempo activo</strong> — el Bot</summary>
 
-> *Ejecutar estos comandos dentro de la carpeta AlyaBot-MD*
+> *Ejecutar estos comandos dentro de la carpeta LiderClashBot*
 ```bash
 termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
 ``` 
@@ -154,7 +164,7 @@ pm2 start index
 ### En caso de detenerse
 > _Si despues que ya instalastes tu bot y termux te salta en blanco, se fue tu internet o reiniciaste tu celular, solo realizaras estos pasos:_
 ```bash
-cd && cd AlyaBot-MD && npm start
+cd && cd LiderClashBot && npm start
 ```
 ---
 
@@ -162,7 +172,7 @@ cd && cd AlyaBot-MD && npm start
 > *Detén el bot, haz click en el símbolo (ctrl) [default=z] usar la letra "z" + "ENTER" hasta que salga algo verdes similar a: `AlyaBot-MD $`*
  
 ```bash 
-cd && cd AlyaBot-MD && rm -rf Sessions/Owner && npm start
+cd && cd LiderClashBot && rm -rf Sessions/Owner && npm start
 ```
 </details>
 
