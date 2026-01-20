@@ -1,4 +1,4 @@
-mkimport chalk from 'chalk'
+import chalk from 'chalk'
 import moment from 'moment-timezone'
 
 export default async (client, m) => {
