@@ -191,10 +191,8 @@ export default async (client, m) => {
 
   // Grupo
   'bot', 'clear', 'closet', 'demote', 'gp', 'groupinfo', 
-  'hidetag', 'tag', 'kick', 'link', 'open', 'welcome', 
-  'bienvenidas', 'alerts', 'alertas', 'nsfw', 'antilink', 
-  'antienlaces', 'antilinks', 'rpg', 'economy', 'economia', 
-  'gacha', 'adminonly', 'onlyadmin', 'pokes', 'promote', 
+  'hidetag', 'tag', 'kick', 'open', 'welcome', 
+  'bienvenidas','promote', 
   'setgpname', 'setgpbanner', 'setgpdesc', 'setprimary', 
   'delwarn', 'setwarnlimit', 'warn', 'warns',
 
